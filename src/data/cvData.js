@@ -80,8 +80,8 @@ export const cvData = {
           {
             text: "Tutores: Dr. Susan Schuppli y Dr. Christina Varvia",
             links: {
-              "Dr. Susan Schuppli": "https://www.gold.ac.uk/visual-cultures/staff/schuppli-susan/",
-              "Dr. Christina Varvia": "https://forensic-architecture.org/about/team",
+              "Dr. Susan Schuppli": "https://susanschuppli.com/",
+              "Dr. Christina Varvia": "https://research-architecture.org/Christina-Varvia",
             },
           },
         ],
@@ -99,7 +99,7 @@ export const cvData = {
           },
           {
             text: "Tutor: MA.Arch. Luis Fraguada",
-            links: { "Luis Fraguada": "https://fraguada.github.io/" },
+            links: { "Luis Fraguada": "https://iaac.net/people/luis-fraguada/" },
           },
         ],
       },
@@ -356,7 +356,7 @@ export const cvData = {
         period: "2018",
         title: "Arquitecto de proyecto",
         place: "Jardín Comunitario y Laboratorio de Mariposas (Fundación Apapachoa) — Nicaragua.",
-        links: { "Fundación Apapachoa": "https://apapachoa.org/" },
+        links: { "Fundación Apapachoa": "https://apapachoa.net/" },
       },
       {
         period: "2015",
@@ -722,7 +722,7 @@ export const cvData = {
         period: "2018",
         title: "Project Architect",
         place: "Community Garden and Butterfly Laboratory (Fundación Apapachoa) — Nicaragua.",
-        links: { "Fundación Apapachoa": "https://apapachoa.org/" },
+        links: { "Fundación Apapachoa": "https://apapachoa.net/" },
       },
       {
         period: "2015",
