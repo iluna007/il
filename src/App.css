@@ -107,24 +107,25 @@ p, .entry-content { overflow-wrap: break-word; }
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   padding:
     max(0.6rem, env(safe-area-inset-top))
     max(var(--page-padding-x), env(safe-area-inset-right))
     0.6rem
     max(var(--page-padding-x), env(safe-area-inset-left));
-  background: color-mix(in srgb, var(--nav-bg) 92%, transparent);
-  border-bottom: 1px solid var(--nav-border);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: color-mix(in srgb, var(--nav-bg) 50%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--nav-border) 55%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .navbar-controls {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0.5rem;
+  margin-left: auto;
 }
 
 .toggle-group {
