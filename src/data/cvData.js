@@ -33,7 +33,7 @@ const skillsSectionShared = {
 
 export const cvData = {
   es: {
-    name: "Ike Luna",
+    name: "Iker Luna",
     contact,
     bio: {
       text: "Arquitecto e investigador con posgrados en Research Architecture ({Goldsmiths, University of London}) y en Advanced Architecture ({IAAC, Barcelona}). Su práctica constituye uno de los primeros desarrollos sistemáticos de la investigación arquitectónica forense con base institucional en Centroamérica. Ha trabajado como asistente de investigación en {Forensic Architecture} e investigador en {Re/Presentare}, aplicando análisis geoespaciales, fotogrametría y fuentes abiertas a casos de violencia política en {Nicaragua}, {Honduras} y {Gaza}. Docente visitante en la {Escuela de Arquitectura de la Universidad de Costa Rica}.",
@@ -400,7 +400,7 @@ export const cvData = {
   },
 
   en: {
-    name: "Iker Rodrigo Luna Avilés",
+    name: "Iker Luna",
     contact,
     bio: {
       text: "Architect and researcher with postgraduate degrees in Research Architecture ({Goldsmiths, University of London}) and Advanced Architecture ({IAAC, Barcelona}). His practice is one of the first systematic developments of institutionally grounded forensic architectural research in Central America. He has worked as a research assistant at {Forensic Architecture} and as a researcher at {Re/Presentare}, applying geospatial analysis, photogrammetry, and open-source investigation to cases of political violence in {Nicaragua}, {Honduras}, and {Gaza}. Visiting lecturer at the {School of Architecture, University of Costa Rica}.",
