@@ -1,0 +1,215 @@
+/* ── Variables de tema ─────────────────────────────────────── */
+:root,
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --text-muted: #555555;
+  --accent: #111111;
+  --border: #dddddd;
+  --nav-bg: #ffffff;
+  --nav-border: #e0e0e0;
+  --btn-active-bg: #111111;
+  --btn-active-text: #ffffff;
+  --link-color: #0056b3;
+  --bio-bg: #f5f5f5;
+}
+
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --text: #f0f0f0;
+  --text-muted: #aaaaaa;
+  --accent: #f0f0f0;
+  --border: #2a2a2a;
+  --nav-bg: #111111;
+  --nav-border: #222222;
+  --btn-active-bg: #f0f0f0;
+  --btn-active-text: #0a0a0a;
+  --link-color: #6ab0f5;
+  --bio-bg: #141414;
+}
+
+/* ── Reset y base ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+a:hover { text-decoration: underline; }
+
+/* ── Navbar ────────────────────────────────────────────────── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-name {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.toggle-group {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.65rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover { background: var(--border); }
+.btn.active {
+  background: var(--btn-active-bg);
+  color: var(--btn-active-text);
+}
+
+.btn-download {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+}
+
+/* ── Contenido principal ───────────────────────────────────── */
+.cv-main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+/* ── Header ────────────────────────────────────────────────── */
+.cv-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.contact-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.bio-box {
+  background: var(--bio-bg);
+  border-left: 3px solid var(--border);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+/* ── Secciones ─────────────────────────────────────────────── */
+.cv-section {
+  margin-top: 2.5rem;
+}
+
+.section-title {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.subsection-title {
+  font-family: sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 1.5rem 0 0.75rem;
+}
+
+/* ── Entradas ──────────────────────────────────────────────── */
+.cv-entry {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 0 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.entry-year {
+  font-family: sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding-top: 0.1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.entry-title {
+  margin-bottom: 0.25rem;
+}
+
+.entry-detail {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.pub-title {
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+  }
+  .entry-year {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .cv-header h1 { font-size: 1.7rem; }
+  .navbar { padding: 0.5rem 1rem; }
+  .cv-main { padding: 2rem 1rem 4rem; }
+}
