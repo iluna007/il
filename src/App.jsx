@@ -7,14 +7,15 @@ import { cvData } from "./data/cvData";
 import "./App.css";
 
 export default function App() {
-  const [lang] = useState("es");
+  const [lang, setLang] = useState("es");
+  const [theme, setTheme] = useState("dark");
 
   const data = cvData[lang];
   const s = data.sections;
 
   return (
-    <div className="app" data-theme="dark">
-      <Navbar />
+    <div className="app" data-theme={theme}>
+      <Navbar lang={lang} setLang={setLang} theme={theme} setTheme={setTheme} />
 
       <main className="cv-main" id="cv-content">
         <Header lang={lang} />

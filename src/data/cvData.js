@@ -33,7 +33,7 @@ const skillsSectionShared = {
 
 export const cvData = {
   es: {
-    name: "Iker Rodrigo Luna Avilés",
+    name: "Ike Luna",
     contact,
     bio: {
       text: "Arquitecto e investigador con posgrados en Research Architecture ({Goldsmiths, University of London}) y en Advanced Architecture ({IAAC, Barcelona}). Su práctica constituye uno de los primeros desarrollos sistemáticos de la investigación arquitectónica forense con base institucional en Centroamérica. Ha trabajado como asistente de investigación en {Forensic Architecture} e investigador en {Re/Presentare}, aplicando análisis geoespaciales, fotogrametría y fuentes abiertas a casos de violencia política en {Nicaragua}, {Honduras} y {Gaza}. Docente visitante en la {Escuela de Arquitectura de la Universidad de Costa Rica}.",
@@ -45,7 +45,7 @@ export const cvData = {
         "Nicaragua": "https://es.wikipedia.org/wiki/Nicaragua",
         "Honduras": "https://es.wikipedia.org/wiki/Honduras",
         "Gaza": "https://es.wikipedia.org/wiki/Franja_de_Gaza",
-        "Escuela de Arquitectura de la Universidad de Costa Rica": "https://arquitectura.ucr.ac.cr/",
+        "Escuela de Arquitectura de la Universidad de Costa Rica": "https://arquis.ucr.ac.cr/",
       },
     },
     sections: {
@@ -124,7 +124,7 @@ export const cvData = {
         title: "Docente Visitante",
         place: {
           text: "Escuela de Arquitectura, Universidad de Costa Rica (UCR)",
-          url: "https://arquitectura.ucr.ac.cr/",
+          url: "https://arquis.ucr.ac.cr/",
         },
         details: [
           "Talleres de diseño 3, 4, 5, 6, 7 y 8: Seminarios sobre representación espacial, análisis urbano e investigación proyectual, integrando la cartografía y la interpretación crítica de las condiciones sociales y políticas del territorio costarricense.",
@@ -156,7 +156,7 @@ export const cvData = {
       {
         period: "2026 – presente",
         title: "Investigador principal",
-        place: { text: "Escuela de Arquitectura, UCR", url: "https://arquitectura.ucr.ac.cr/" },
+        place: { text: "Escuela de Arquitectura, UCR", url: "https://arquis.ucr.ac.cr/" },
         details: [
           "(Pry01-88-2027) Arquitectura forense y análisis de visibilidad: estudio experimental del Edificio de Arquitectura de la UCR ante escenarios de atacante activo.",
         ],
@@ -191,7 +191,7 @@ export const cvData = {
           title: '"Disruptive Technical Objects and Counter Logistical Landscapes: The Nicaraguan Case"',
           journal: {
             text: "Architecture and Culture, vol. 14. Submission ID 255096835.",
-            url: "https://www.tandfonline.com/journals/raac20",
+            url: "https://www.tandfonline.com/journals/rfac20",
           },
         },
         {
@@ -253,7 +253,7 @@ export const cvData = {
         title: "Plataforma Interactiva Berta Cáceres",
         org: { text: "Re/Presentare / GIEI-Honduras", url: "https://re-presentare.org/" },
         desc: "Encargado del Frontend y Backend. Plataforma cartográfica e interactiva para visualizar miles de eventos del expediente del GIEI-Honduras, revelando patrones y estructuras de operación en el tiempo y en el territorio.",
-        link: { text: "bertaceres.re-presentare.org", url: "https://bertaceres.re-presentare.org/" },
+        link: { text: "bertaceres.re-presentare.org", url: "https://bertacaceres.re-presentare.org/" },
       },
       {
         period: "2025",
@@ -274,6 +274,7 @@ export const cvData = {
       {
         period: "2026 – presente",
         title: "Co-responsable y creador del archivo web",
+        place: { text: "Vice-rectorado de Investigación UCR", url: "https://arquis.ucr.ac.cr/accion-social/proyectos-accion-social/ec-640.html" },
         desc: "EC-640 | Memorias vivas: preservación de la identidad local y del patrimonio cultural de Golfito y Puerto Jiménez.",
       },
       {
@@ -296,7 +297,7 @@ export const cvData = {
         subtitle: "(Cohorte MA Research Architecture)",
         venue: {
           text: "St James Church, Londres, Reino Unido",
-          url: "https://maps.google.com/?q=St+James+Church+London",
+          url: "https://www.gold.ac.uk/calendar/?id=15619",
         },
         desc: "Artista participante; redacción de textos de sala; logística, montaje y configuración espacial.",
       },
@@ -325,13 +326,13 @@ export const cvData = {
         award: "Beca",
         event: {
           text: "Central America Campus for Academic Freedom — Universidad de Costa Rica (UCR)",
-          url: "https://www.ucr.ac.cr/",
+          url: "https://www.ucr.ac.cr/noticias/2022/11/30/el-campus-centroamerica-por-la-libertad-de-catedra-abre-su-primera-convocatoria.html",
         },
       },
       {
         year: "2022",
         award: "Subvención",
-        event: { text: "El Flotador — TEOR/ética", url: "https://www.teorética.org/" },
+        event: { text: "El Flotador — TEOR/ética", url: "https://teoretica.org/2022/05/23/anuncio-seleccionades-beca-el-flotador-2022/" },
       },
       {
         year: "2014 – 2015",
@@ -446,8 +447,8 @@ export const cvData = {
           {
             text: "Supervisors: Dr. Susan Schuppli and Dr. Christina Varvia",
             links: {
-              "Dr. Susan Schuppli": "https://www.gold.ac.uk/visual-cultures/staff/schuppli-susan/",
-              "Dr. Christina Varvia": "https://forensic-architecture.org/about/team",
+              "Dr. Susan Schuppli": "https://susanschuppli.com/",
+              "Dr. Christina Varvia": "https://research-architecture.org/Christina-Varvia",
             },
           },
         ],
@@ -465,7 +466,7 @@ export const cvData = {
           },
           {
             text: "Supervisor: MA.Arch. Luis Fraguada",
-            links: { "Luis Fraguada": "https://fraguada.github.io/" },
+            links: { "Luis Fraguada": "https://iaac.net/people/luis-fraguada/" },
           },
         ],
       },
@@ -645,7 +646,7 @@ export const cvData = {
       {
         period: "2021 – 2022",
         title: "3D Modeling and VR Development",
-        place: { text: "Sé Humano, Costa Rica", url: "https://sehumano.org/" },
+        place: { text: "Sé Humano, Costa Rica", url: "https://libertadtraslasrejas.netlify.app/" },
         desc: "Virtual reality installation reconstructing political detention spaces in Nicaragua as public testimony.",
       },
       {
