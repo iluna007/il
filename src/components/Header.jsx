@@ -1,4 +1,5 @@
 import { cvData } from "../data/cvData";
+import SocialLinks from "./SocialLinks";
 
 function BioWithLinks({ text, links }) {
   const parts = text.split(/\{([^}]+)\}/g);
@@ -36,6 +37,7 @@ export default function Header({ lang }) {
         <span className="contact-sep" aria-hidden="true">·</span>
         <a href={contact.email2.url}>{contact.email2.text}</a>
       </div>
+      <SocialLinks links={data.socialLinks} lang={lang} />
       <div className="bio-box">
         <BioWithLinks text={data.bio.text} links={data.bio.links} />
       </div>

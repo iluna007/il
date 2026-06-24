@@ -7,6 +7,19 @@ const contact = {
   email2: { text: "iker.luna@ucr.ac.cr", url: "mailto:iker.luna@ucr.ac.cr" },
 };
 
+const socialLinks = [
+  {
+    id: "instagram",
+    url: "https://www.instagram.com/paisajevibracional/",
+    label: { es: "Instagram — Paisaje Vibracional", en: "Instagram — Paisaje Vibracional" },
+  },
+  {
+    id: "linkedin",
+    url: "https://www.linkedin.com/in/iker-l-05484b80/?skipRedirect=true",
+    label: { es: "LinkedIn — Iker Luna", en: "LinkedIn — Iker Luna" },
+  },
+];
+
 const skillsSectionShared = {
   software: [
     { text: "Rhinoceros", url: "https://www.rhino3d.com/" },
@@ -35,6 +48,7 @@ export const cvData = {
   es: {
     name: "Iker Luna",
     contact,
+    socialLinks,
     bio: {
       text: "Arquitecto e investigador con posgrados en Research Architecture ({Goldsmiths, University of London}) y en Advanced Architecture ({IAAC, Barcelona}). Su práctica constituye uno de los primeros desarrollos sistemáticos de la investigación arquitectónica forense con base institucional en Centroamérica. Ha trabajado como asistente de investigación en {Forensic Architecture} e investigador en {Re/Presentare}, aplicando análisis geoespaciales, fotogrametría y fuentes abiertas a casos de violencia política en {Nicaragua}, {Honduras} y {Gaza}. Docente visitante en la {Escuela de Arquitectura de la Universidad de Costa Rica}.",
       links: {
@@ -49,6 +63,7 @@ export const cvData = {
       },
     },
     sections: {
+      intro: "PERFIL",
       education: "EDUCACIÓN",
       academicExp: "EXPERIENCIAS ACADÉMICAS",
       teaching: "DOCENCIA",
@@ -249,6 +264,13 @@ export const cvData = {
     ],
     platforms: [
       {
+        period: "2026",
+        title: "Portafolio web personal",
+        org: { text: "Sitio de portafolio profesional", url: "https://ikerluna.netlify.app/" },
+        desc: "Sitio web responsivo de portafolio arquitectónico e investigación. Diseño, front-end y despliegue en producción.",
+        link: { text: "ikerluna.netlify.app", url: "https://ikerluna.netlify.app/" },
+      },
+      {
         period: "2024 – 2026",
         title: "Plataforma Interactiva Berta Cáceres",
         org: { text: "Re/Presentare / GIEI-Honduras", url: "https://re-presentare.org/" },
@@ -402,6 +424,7 @@ export const cvData = {
   en: {
     name: "Iker Luna",
     contact,
+    socialLinks,
     bio: {
       text: "Architect and researcher with postgraduate degrees in Research Architecture ({Goldsmiths, University of London}) and Advanced Architecture ({IAAC, Barcelona}). His practice is one of the first systematic developments of institutionally grounded forensic architectural research in Central America. He has worked as a research assistant at {Forensic Architecture} and as a researcher at {Re/Presentare}, applying geospatial analysis, photogrammetry, and open-source investigation to cases of political violence in {Nicaragua}, {Honduras}, and {Gaza}. Visiting lecturer at the {School of Architecture, University of Costa Rica}.",
       links: {
@@ -416,6 +439,7 @@ export const cvData = {
       },
     },
     sections: {
+      intro: "PROFILE",
       education: "EDUCATION",
       academicExp: "ACADEMIC EXPERIENCE",
       teaching: "TEACHING",
@@ -616,8 +640,14 @@ export const cvData = {
     ],
     platforms: [
       {
+        period: "2026",
+        title: "Personal web portfolio",
+        org: { text: "Professional portfolio site", url: "https://ikerluna.netlify.app/" },
+        desc: "Responsive architectural and research portfolio website. Design, front-end, and production deployment.",
+        link: { text: "ikerluna.netlify.app", url: "https://ikerluna.netlify.app/" },
+      },
+      {
         period: "2024 – 2026",
-        title: "Berta Cáceres Interactive Platform",
         org: { text: "Re/Presentare / GIEI-Honduras", url: "https://re-presentare.org/" },
         desc: "Frontend and Backend lead. Cartographic and interactive platform to visualize thousands of events from the GIEI-Honduras case file, revealing patterns and operational structures across time and territory.",
         link: { text: "bertaceres.re-presentare.org", url: "https://bertaceres.re-presentare.org/" },
