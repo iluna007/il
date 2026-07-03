@@ -113,13 +113,19 @@ export const cvData = {
       {
         year: "2023",
         title: "Certificación Rhino — Nivel 2",
-        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        institution: {
+          text: "Rhino",
+          url: "https://wiki.mcneel.com/rhino/rhinocertified/level2_certified",
+        },
         details: [{ text: "Julio 2023" }],
       },
       {
         year: "2021",
         title: "Certificación Rhino — Nivel 1",
-        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        institution: {
+          text: "Rhino",
+          url: "https://wiki.mcneel.com/rhino/rhinocertified/level1_certified",
+        },
         details: [{ text: "Septiembre 2021" }],
       },
       {
@@ -531,13 +537,19 @@ export const cvData = {
       {
         year: "2023",
         title: "Rhino Certification — Level 2",
-        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        institution: {
+          text: "Rhino",
+          url: "https://wiki.mcneel.com/rhino/rhinocertified/level2_certified",
+        },
         details: [{ text: "July 2023" }],
       },
       {
         year: "2021",
         title: "Rhino Certification — Level 1",
-        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        institution: {
+          text: "Rhino",
+          url: "https://wiki.mcneel.com/rhino/rhinocertified/level1_certified",
+        },
         details: [{ text: "September 2021" }],
       },
       {
