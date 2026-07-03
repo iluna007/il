@@ -102,6 +102,39 @@ export const cvData = {
         ],
       },
       {
+        year: "2023 – presente",
+        title: "Full Stack Developer",
+        institution: {
+          text: "4Geeks Academy (programa en línea)",
+          url: "https://4geeksacademy.com/",
+        },
+        details: [{ text: "Octubre 2023 – presente" }],
+      },
+      {
+        year: "2023",
+        title: "Certificación Rhino — Nivel 2",
+        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        details: [{ text: "Julio 2023" }],
+      },
+      {
+        year: "2021",
+        title: "Certificación Rhino — Nivel 1",
+        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        details: [{ text: "Septiembre 2021" }],
+      },
+      {
+        year: "2021",
+        title: "Introducción a JavaScript, CSS3 y HTML",
+        institution: { text: "University of Michigan", url: "https://www.umich.edu/" },
+        details: [{ text: "Marzo 2021" }],
+      },
+      {
+        year: "2020",
+        title: "Talleres de arte contemporáneo y crítica",
+        institution: { text: "TACON, Managua, Nicaragua" },
+        details: [{ text: "Febrero – Octubre 2020" }],
+      },
+      {
         year: "2013",
         title: "Master in Advanced Architecture",
         institution: {
@@ -476,6 +509,39 @@ export const cvData = {
             },
           },
         ],
+      },
+      {
+        year: "2023 – present",
+        title: "Full Stack Developer",
+        institution: {
+          text: "4Geeks Academy (online program)",
+          url: "https://4geeksacademy.com/",
+        },
+        details: [{ text: "October 2023 – present" }],
+      },
+      {
+        year: "2023",
+        title: "Rhino Certification — Level 2",
+        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        details: [{ text: "July 2023" }],
+      },
+      {
+        year: "2021",
+        title: "Rhino Certification — Level 1",
+        institution: { text: "Rhino", url: "https://www.rhino3d.com/certification" },
+        details: [{ text: "September 2021" }],
+      },
+      {
+        year: "2021",
+        title: "Introduction to JavaScript, CSS3, and HTML",
+        institution: { text: "University of Michigan", url: "https://www.umich.edu/" },
+        details: [{ text: "March 2021" }],
+      },
+      {
+        year: "2020",
+        title: "Contemporary art workshops and critic",
+        institution: { text: "TACON, Managua, Nicaragua" },
+        details: [{ text: "February – October 2020" }],
       },
       {
         year: "2013",
