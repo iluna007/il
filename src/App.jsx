@@ -13,6 +13,7 @@ import "./App.css";
 export default function App() {
   const [lang, setLang] = useState("es");
   const [theme, setTheme] = useState("dark");
+  const [customColor, setCustomColor] = useState("#0a0a0a");
   const progress = useScrollProgress();
 
   const data = cvData[lang];
@@ -21,7 +22,14 @@ export default function App() {
   return (
     <div className="app" data-theme={theme}>
       <ScrollProgress progress={progress} />
-      <Navbar lang={lang} setLang={setLang} theme={theme} setTheme={setTheme} />
+      <Navbar
+        lang={lang}
+        setLang={setLang}
+        theme={theme}
+        setTheme={setTheme}
+        customColor={customColor}
+        setCustomColor={setCustomColor}
+      />
       <SideNav lang={lang} />
       <MobileNav lang={lang} />
 

@@ -1,9 +1,22 @@
 import { useEffect } from "react";
+import { applyTheme } from "../utils/themeColor";
 
-export default function Navbar({ lang, setLang, theme, setTheme }) {
+export default function Navbar({
+  lang,
+  setLang,
+  theme,
+  setTheme,
+  customColor,
+  setCustomColor,
+}) {
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+    applyTheme(theme, customColor);
+  }, [theme, customColor]);
+
+  const handleColorChange = (event) => {
+    setCustomColor(event.target.value);
+    setTheme("custom");
+  };
 
   return (
     <nav className="navbar">
@@ -48,6 +61,34 @@ export default function Navbar({ lang, setLang, theme, setTheme }) {
           >
             ●
           </button>
+        </div>
+
+        <div className="toggle-group color-picker-group" role="group" aria-label={lang === "es" ? "Color de fondo" : "Background color"}>
+          <label
+            className={`btn btn-color ${theme === "custom" ? "active" : ""}`}
+            title={lang === "es" ? "Elegir color de fondo" : "Choose background color"}
+          >
+            <span className="color-wheel-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <defs>
+                  <linearGradient id="wheel-a" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#ff6b6b" />
+                    <stop offset="50%" stopColor="#ffd93d" />
+                    <stop offset="100%" stopColor="#6bcbff" />
+                  </linearGradient>
+                </defs>
+                <circle cx="12" cy="12" r="9" fill="url(#wheel-a)" stroke="currentColor" strokeWidth="1.2" />
+                <circle cx="12" cy="12" r="3.5" fill={customColor} stroke="currentColor" strokeWidth="1" />
+              </svg>
+            </span>
+            <input
+              type="color"
+              className="color-picker-input"
+              value={customColor}
+              onChange={handleColorChange}
+              aria-label={lang === "es" ? "Selector de color de fondo" : "Background color picker"}
+            />
+          </label>
         </div>
       </div>
     </nav>
