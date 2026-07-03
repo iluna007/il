@@ -102,13 +102,13 @@ export const cvData = {
         ],
       },
       {
-        year: "2023 – presente",
+        year: "2024",
         title: "Full Stack Developer",
         institution: {
           text: "4Geeks Academy (programa en línea)",
           url: "https://4geeksacademy.com/",
         },
-        details: [{ text: "Octubre 2023 – presente" }],
+        details: [{ text: "Enero – Abril 2024 · programa de 4 meses" }],
       },
       {
         year: "2023",
@@ -131,8 +131,17 @@ export const cvData = {
       {
         year: "2020",
         title: "Talleres de arte contemporáneo y crítica",
-        institution: { text: "TACON, Managua, Nicaragua" },
-        details: [{ text: "Febrero – Octubre 2020" }],
+        institution: {
+          text: "TACON Espiralaespora, Managua, Nicaragua",
+          url: "https://www.instagram.com/espira_espora/",
+        },
+        details: [
+          { text: "Febrero – Octubre 2020" },
+          {
+            text: "Impartido por Patricia Belli",
+            links: { "Patricia Belli": "https://patriciabelli.com/" },
+          },
+        ],
       },
       {
         year: "2013",
@@ -511,13 +520,13 @@ export const cvData = {
         ],
       },
       {
-        year: "2023 – present",
+        year: "2024",
         title: "Full Stack Developer",
         institution: {
           text: "4Geeks Academy (online program)",
           url: "https://4geeksacademy.com/",
         },
-        details: [{ text: "October 2023 – present" }],
+        details: [{ text: "January – April 2024 · 4-month program" }],
       },
       {
         year: "2023",
@@ -540,8 +549,17 @@ export const cvData = {
       {
         year: "2020",
         title: "Contemporary art workshops and critic",
-        institution: { text: "TACON, Managua, Nicaragua" },
-        details: [{ text: "February – October 2020" }],
+        institution: {
+          text: "TACON Espiralaespora, Managua, Nicaragua",
+          url: "https://www.instagram.com/espira_espora/",
+        },
+        details: [
+          { text: "February – October 2020" },
+          {
+            text: "Led by Patricia Belli",
+            links: { "Patricia Belli": "https://patriciabelli.com/" },
+          },
+        ],
       },
       {
         year: "2013",
