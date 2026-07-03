@@ -18,6 +18,11 @@ const socialLinks = [
     url: "https://www.linkedin.com/in/iker-l-05484b80/?skipRedirect=true",
     label: { es: "LinkedIn — Iker Luna", en: "LinkedIn — Iker Luna" },
   },
+  {
+    id: "github",
+    url: "https://github.com/iluna007",
+    label: { es: "GitHub — Iker Luna", en: "GitHub — Iker Luna" },
+  },
 ];
 
 const skillsSectionShared = {
@@ -59,7 +64,8 @@ export const cvData = {
         "Nicaragua": "https://es.wikipedia.org/wiki/Nicaragua",
         "Honduras": "https://es.wikipedia.org/wiki/Honduras",
         "Gaza": "https://es.wikipedia.org/wiki/Franja_de_Gaza",
-        "Escuela de Arquitectura de la Universidad de Costa Rica": "https://arquis.ucr.ac.cr/",
+        "Escuela de Arquitectura de la Universidad de Costa Rica":
+          "https://arquis.ucr.ac.cr/docencia/docentes/iker-luna/imprimir.html?empotrar=true&ruta=https%3A%2F%2Farquis.ucr.ac.cr%2Fdocencia%2Fdocentes%2Fiker-luna.html",
       },
     },
     sections: {
@@ -483,7 +489,8 @@ export const cvData = {
         "Nicaragua": "https://en.wikipedia.org/wiki/Nicaragua",
         "Honduras": "https://en.wikipedia.org/wiki/Honduras",
         "Gaza": "https://en.wikipedia.org/wiki/Gaza_Strip",
-        "School of Architecture, University of Costa Rica": "https://arquitectura.ucr.ac.cr/",
+        "School of Architecture, University of Costa Rica":
+          "https://arquis.ucr.ac.cr/docencia/docentes/iker-luna/imprimir.html?empotrar=true&ruta=https%3A%2F%2Farquis.ucr.ac.cr%2Fdocencia%2Fdocentes%2Fiker-luna.html",
       },
     },
     sections: {
