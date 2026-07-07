@@ -1,10 +1,6 @@
 import { useMemo } from "react";
 import { getNavSections, navSectionConfig } from "../data/navSections";
-import { useActiveSection } from "../hooks/useScrollNav";
-
-function scrollToSection(id) {
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+import { scrollToSection, useActiveSection } from "../hooks/useScrollNav";
 
 export default function SideNav({ lang }) {
   const navSections = getNavSections(lang);

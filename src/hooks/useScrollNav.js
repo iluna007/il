@@ -42,3 +42,17 @@ export function useActiveSection(sectionIds) {
 
   return activeId;
 }
+
+export function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const scrollMargin = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+  const top = el.getBoundingClientRect().top + window.scrollY - scrollMargin;
+
+  window.scrollTo({
+    top: Math.max(0, top),
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+  });
+}

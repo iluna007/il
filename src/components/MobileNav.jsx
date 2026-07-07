@@ -1,10 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { getNavSections, navSectionConfig } from "../data/navSections";
-import { useActiveSection } from "../hooks/useScrollNav";
+import { scrollToSection, useActiveSection } from "../hooks/useScrollNav";
 
-function scrollToSection(id, setOpen) {
+function handleSectionSelect(id, setOpen) {
   setOpen(false);
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  // Wait for body overflow to unlock after the menu closes.
+  window.setTimeout(() => {
+    scrollToSection(id);
+  }, 50);
 }
 
 export default function MobileNav({ lang }) {
@@ -46,30 +51,33 @@ export default function MobileNav({ lang }) {
         </span>
       </button>
 
-      {open && (
-        <>
+      {open &&
+        createPortal(
           <button
             type="button"
             className="mobile-nav__backdrop"
             onClick={() => setOpen(false)}
             aria-label={lang === "es" ? "Cerrar menú" : "Close menu"}
-          />
-          <div className="mobile-nav__menu" role="listbox">
-            {navSections.map((section) => (
-              <button
-                key={section.id}
-                type="button"
-                role="option"
-                aria-selected={activeId === section.id}
-                className={`mobile-nav__item ${activeId === section.id ? "is-active" : ""}`}
-                onClick={() => scrollToSection(section.id, setOpen)}
-              >
-                <span>{section.num}</span>
-                {section.label}
-              </button>
-            ))}
-          </div>
-        </>
+          />,
+          document.body
+        )}
+
+      {open && (
+        <div className="mobile-nav__menu" role="listbox">
+          {navSections.map((section) => (
+            <button
+              key={section.id}
+              type="button"
+              role="option"
+              aria-selected={activeId === section.id}
+              className={`mobile-nav__item ${activeId === section.id ? "is-active" : ""}`}
+              onClick={() => handleSectionSelect(section.id, setOpen)}
+            >
+              <span>{section.num}</span>
+              {section.label}
+            </button>
+          ))}
+        </div>
       )}
     </div>
   );

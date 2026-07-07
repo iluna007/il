@@ -280,6 +280,8 @@ p, .entry-content { overflow-wrap: break-word; }
 }
 
 .mobile-nav__toggle {
+  position: relative;
+  z-index: 2;
   width: 100%;
   min-height: 44px;
   display: flex;
@@ -324,7 +326,7 @@ p, .entry-content { overflow-wrap: break-word; }
 
 .mobile-nav__menu {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-top: 6px;
   background: color-mix(in srgb, var(--nav-bg) 98%, transparent);
   backdrop-filter: blur(16px);
