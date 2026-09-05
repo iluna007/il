@@ -55,7 +55,7 @@ export const cvData = {
     contact,
     socialLinks,
     bio: {
-      text: "Arquitecto e investigador con posgrados en Research Architecture ({Goldsmiths, University of London}) y en Advanced Architecture ({IAAC, Barcelona}). Su práctica constituye uno de los primeros desarrollos sistemáticos de la investigación arquitectónica forense con base institucional en Centroamérica. Ha trabajado como asistente de investigación en {Forensic Architecture} e investigador en {Re/Presentare}, aplicando análisis geoespaciales, fotogrametría y fuentes abiertas a casos de violencia política en {Nicaragua}, {Honduras} y {Gaza}. Docente visitante en la {Escuela de Arquitectura de la Universidad de Costa Rica}.",
+      text: "Arquitecto e investigador con posgrados en Arquitectura investigativa ({Goldsmiths, University of London}) y en Arquitectura Avanzada ({IAAC, Barcelona}). Su práctica constituye una práctica espacial crítica basada en metodologías forenses. Ha trabajado como asistente de investigación en {Forensic Architecture} e investigador en {Re/Presentare}, aplicando análisis geoespaciales, fotogrametría y fuentes abiertas a casos de violencia política en {Nicaragua}, {Honduras} y {Gaza}. Docente visitante en la {Escuela de Arquitectura de la Universidad de Costa Rica}.",
       links: {
         "Goldsmiths, University of London": "https://www.gold.ac.uk/",
         "IAAC, Barcelona": "https://iaac.net/",
