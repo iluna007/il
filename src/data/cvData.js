@@ -318,6 +318,13 @@ export const cvData = {
     ],
     platforms: [
       {
+        period: "2026 – presente",
+        title: "Archivo Memorias Vivas",
+        org: { text: "EC-640 · Universidad de Costa Rica", url: "https://arquis.ucr.ac.cr/accion-social/proyectos-accion-social/ec-640.html" },
+        desc: "Archivo web en construcción para la preservación de la identidad local y el patrimonio cultural de Golfito y Puerto Jiménez.",
+        link: { text: "mvtest2026.netlify.app · en construcción", url: "https://mvtest2026.netlify.app/" },
+      },
+      {
         period: "2026",
         title: "Portafolio web personal",
         org: { text: "Sitio de portafolio profesional", url: "https://ikerluna.netlify.app/" },
@@ -743,6 +750,13 @@ export const cvData = {
     ],
     platforms: [
       {
+        period: "2026 – present",
+        title: "Memorias Vivas Archive",
+        org: { text: "EC-640 · University of Costa Rica", url: "https://arquis.ucr.ac.cr/accion-social/proyectos-accion-social/ec-640.html" },
+        desc: "Web archive under construction for the preservation of local identity and cultural heritage of Golfito and Puerto Jiménez.",
+        link: { text: "mvtest2026.netlify.app · under construction", url: "https://mvtest2026.netlify.app/" },
+      },
+      {
         period: "2026",
         title: "Personal web portfolio",
         org: { text: "Professional portfolio site", url: "https://ikerluna.netlify.app/" },
@@ -751,6 +765,7 @@ export const cvData = {
       },
       {
         period: "2024 – 2026",
+        title: "Berta Cáceres Interactive Platform",
         org: { text: "Re/Presentare / GIEI-Honduras", url: "https://re-presentare.org/" },
         desc: "Frontend and Backend lead. Cartographic and interactive platform to visualize thousands of events from the GIEI-Honduras case file, revealing patterns and operational structures across time and territory.",
         link: { text: "bertaceres.re-presentare.org", url: "https://bertaceres.re-presentare.org/" },
