@@ -166,6 +166,19 @@ p, .entry-content { overflow-wrap: break-word; }
   color: var(--btn-active-text);
 }
 
+.btn-download {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 0.45rem 0.9rem;
+}
+
+.btn-download:disabled {
+  cursor: progress;
+  opacity: 0.6;
+}
+
 .color-picker-group {
   position: relative;
 }

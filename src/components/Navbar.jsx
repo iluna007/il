@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { applyTheme } from "../utils/themeColor";
+import { downloadCvPdf } from "../utils/downloadPdf";
 
 export default function Navbar({
   lang,
@@ -13,9 +14,22 @@ export default function Navbar({
     applyTheme(theme, customColor);
   }, [theme, customColor]);
 
+  const [downloading, setDownloading] = useState(false);
+
   const handleColorChange = (event) => {
     setCustomColor(event.target.value);
     setTheme("custom");
+  };
+
+  const handleDownload = async () => {
+    setDownloading(true);
+    try {
+      await downloadCvPdf(lang);
+    } catch (error) {
+      console.error("PDF generation failed", error);
+    } finally {
+      setDownloading(false);
+    }
   };
 
   return (
@@ -90,6 +104,18 @@ export default function Navbar({
             />
           </label>
         </div>
+
+        <button
+          type="button"
+          className="btn btn-download"
+          onClick={handleDownload}
+          disabled={downloading}
+          aria-busy={downloading}
+          title={lang === "es" ? "Descargar CV en PDF" : "Download CV as PDF"}
+          aria-label={lang === "es" ? "Descargar CV en PDF" : "Download CV as PDF"}
+        >
+          {downloading ? "…" : "↓ PDF"}
+        </button>
       </div>
     </nav>
   );
