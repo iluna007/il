@@ -5,14 +5,24 @@ const RENDER_WIDTH = 820;
 // Keeps the full-page canvas under iOS Safari's ~16.7M pixel limit.
 const SCALE = 1.6;
 const BLOCK_SELECTOR = ".cv-header > *, .section-title, .subsection-title, .cv-entry";
+const HEADING_SELECTOR = ".section-title, .subsection-title";
 const LINK_PROTOCOLS = ["http:", "https:", "mailto:", "tel:"];
+const PAGE_LABEL = {
+  es: (page, total) => `Página ${page} de ${total}`,
+  en: (page, total) => `Page ${page} of ${total}`,
+};
 
 function collectLayout(container) {
   const origin = container.getBoundingClientRect();
 
-  const breaks = [...container.querySelectorAll(BLOCK_SELECTOR)]
-    .map((el) => el.getBoundingClientRect().top - origin.top)
-    .sort((a, b) => a - b);
+  // A heading must stay on the same page as the block that follows it.
+  const breaks = [];
+  let previousIsHeading = false;
+  container.querySelectorAll(BLOCK_SELECTOR).forEach((el) => {
+    if (!previousIsHeading) breaks.push(el.getBoundingClientRect().top - origin.top);
+    previousIsHeading = el.matches(HEADING_SELECTOR);
+  });
+  breaks.sort((a, b) => a - b);
 
   const links = [];
   container.querySelectorAll("a[href]").forEach((anchor) => {
@@ -138,6 +148,12 @@ export async function downloadCvPdf(lang) {
           { url: link.url }
         );
       });
+
+    const label = (PAGE_LABEL[lang] ?? PAGE_LABEL.en)(index + 1, pages.length);
+    pdf.setFont("helvetica", "normal");
+    pdf.setFontSize(8);
+    pdf.setTextColor(120);
+    pdf.text(label, PAGE.width / 2, PAGE.height - PAGE.margin / 2, { align: "center" });
   });
 
   pdf.save(`IkerLuna_CV_${lang.toUpperCase()}.pdf`);
