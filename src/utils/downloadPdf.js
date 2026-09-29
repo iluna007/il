@@ -76,7 +76,7 @@ export async function downloadCvPdf(lang) {
   if (!source) return;
 
   const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
-    import("html2canvas"),
+    import("html2canvas-pro"),
     import("jspdf"),
   ]);
 
@@ -86,6 +86,7 @@ export async function downloadCvPdf(lang) {
     scale: SCALE,
     backgroundColor: "#ffffff",
     useCORS: true,
+    logging: false,
     windowWidth: 1400,
     scrollX: 0,
     scrollY: -window.scrollY,
